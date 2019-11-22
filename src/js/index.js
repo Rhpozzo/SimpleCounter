@@ -16,7 +16,7 @@ import { Counter } from "./component/counter.js";
 let count = 0;
 
 setInterval(() => {
-	let a = Math.floor(count / 1) % 10;
+	let a = Math.floor((count / 1) % 10);
 	let b = Math.floor(count / 10) % 10;
 	let c = Math.floor(count / 100) % 10;
 	let d = Math.floor(count / 1000) % 10;
@@ -35,5 +35,5 @@ setInterval(() => {
 		/>,
 		document.querySelector("#app")
 	);
-}, 10);
+}, 100);
 ReactDOM.render(<Counter />, document.querySelector("#app"));
